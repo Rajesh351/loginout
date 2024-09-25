@@ -1,0 +1,150 @@
+/* General Container for the component */
+.showall-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Info bar styling */
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.info-bar li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.info-bar a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-bar a:hover {
+  text-decoration: underline;
+}
+
+/* Employee Table Styling */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.employee-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 3fr 2fr 2fr 2fr 2fr 2fr;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.employee-header div {
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+.employee-header div:last-child {
+  border-right: none;
+}
+
+/* Individual Employee Row Styling */
+.employee-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 3fr 2fr 2fr 2fr 2fr 2fr;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.employee-row div {
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.employee-row div:last-child {
+  border-right: none;
+}
+
+/* Alternate row background color for better readability */
+.employee-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Action buttons */
+.employee-row .action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+/* Showall.css */
+/* Showall.css */
+/* Showall.css */
+.search-form {
+  display: flex;
+  justify-content: flex-end; /* Align the search form to the right */
+  width: 40%; /* Set the form width to 100% of the container */
+  margin-left: 58%;
+}
+.search-form p{
+  margin-right: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  /* Set the input width to 40% */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+.employee-row .action-buttons button {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.employee-row .action-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-header, .employee-row {
+      grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  }
+
+  .employee-header div:nth-child(n+4), .employee-row div:nth-child(n+4) {
+      display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-header, .employee-row {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .employee-header div:nth-child(n+2), .employee-row div:nth-child(n+2) {
+      display: none;
+  }
+
+  .info-bar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}

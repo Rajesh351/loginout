@@ -1,0 +1,57 @@
+/* Employee Row Styling */
+.employee-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 3fr 2fr 2fr 2fr 2fr 2fr;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.employee-row:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Employee Data Cell Styling */
+.employee-data {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Employee Image Styling */
+.employee-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular image */
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.action-buttons button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.action-buttons button a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.action-buttons button a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

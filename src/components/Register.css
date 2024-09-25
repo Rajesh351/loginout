@@ -1,0 +1,90 @@
+/* Container for the entire registration form */
+.register-container {
+    width: 100%;
+    max-width: 450px;  /* Set a fixed width for the form */
+    margin: 50px auto;  /* Center the form */
+    padding: 40px;  /* Add padding inside the container */
+    background-color: #f9f9f9;  /* Light background color */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+}
+
+/* Title styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field styling */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;  /* Ensure padding is included in width/height */
+    height: 44px;  /* Set a uniform height for input fields */
+    transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Link styling */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

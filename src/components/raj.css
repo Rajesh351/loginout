@@ -1,0 +1,9 @@
+.raj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 50px;
+    margin-top: 60px;
+}
+
